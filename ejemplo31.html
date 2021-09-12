@@ -70,5 +70,121 @@
         <p>se utiliza para tachar<del>informacion</del></p>
         <p>se utiliza para subrayar<ins>informacion</ins></p>
 
-        </body>
+        <!--Tablas-->
+        <style>
+            <!--Selectores-->
+            table, th, td { 
+                background-color: pink;
+                border: 1px solid black; /*Ancho del birde*/
+                border-collapse: collapse; /*La tabla y las celdas con el mismo borde*/
+                border-spacing: 15px; /*Espacio entre las celdas*/
+            }
+            th,td{
+                padding: 5px; /*ESPACIO ENTRE LA CELDA Y EL CONTENIDO*/
+                text-align: left;
+            }
+        </style>
+
+        <div> <!--Etiqueta contenedora de tipo bloque, y tambien sirve par dar segmentos dentro de la pagina-->
+            <table style="width: 50%;"> <!--Ocupa el 50% de mi pagina web-->
+                <caption>Ejemplo de tablas #1</caption>
+                <tr>
+                    <th>Nombre</th> <!---los th son los encabezados de la tabla-->
+                    <th>apellido</th>
+                    <th>edad</th>
+                </tr>
+                <tr>
+                    <td>Jill</td> <!--Cada dato de la tabla va en un td-->
+                    <td>Smith</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Martin</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Andres</td>
+                    <td>Beltran</td>
+                    <td>33</td>
+                </tr>
+            </table>
+        </div>
+
+        <div> <!--Etiqueta contenedora de tipo bloque, y tambien sirve par dar segmentos dentro de la pagina-->
+            <table style="width: 100%;"> <!--Ocupa el 50% de mi pagina web-->
+                <caption>Ejemplo de tablas #2</caption>
+                <tr>
+                    <th>Nombre</th> <!---los th son los encabezados de la tabla-->
+                    <th style="text-align: center;" colspan="2">Telefono</th> <!--Colapsa en dos la fila del encabezado-->
+                </tr>
+                <tr>
+                    <td>Jill Smith</td> <!--Cada dato de la tabla va en un td-->
+                    <td>30220154544</td>
+                    <td>256578122</td>
+                    </tr>
+                        <td>Eve Martin</td>
+                        <td>4555521</td>
+                        <td>1788522</td>
+                    </tr>
+                <tr>  
+            </table>
+        </div>
+
+        <div> <!--Etiqueta contenedora de tipo bloque, y tambien sirve par dar segmentos dentro de la pagina-->
+            <table style="width: 100%;"> <!--Ocupa el 50% de mi pagina web-->
+                <caption>Ejemplo de tablas #3</caption>
+                <tr> <!--los tr son las filas de la tabla-->
+                    <th>Nombre</th> <!---los th son los encabezados de la tabla-->
+                    <td>Bill Gates</td>
+                </tr>
+                <tr>
+                    <th rowspan="4">Telefono</th> <!--numero de las filas de la tabla-->
+                    <td>30220154544</td>
+                </tr>
+                        <td>45522112</td>
+                </tr>
+                </tr>
+                    <td>45522112</td>
+                </tr>
+                </tr>
+                    <td>45522112</td>
+                </tr>
+            </table>
+        </div>
+
+    <!--Listas-->    
+        <h2>Lista desordenada</h2>
+        <!--Empieza con la etiqueta ul, y cada elemento empieza con li-->
+        <ul style="list-style-type: disc;"> <!--Nos permite modificar las viñetas que tienen las listas, los discos son puntos negros-->
+            <li><a href="https://imaster.academy/course/view.php?id=830&section=7" target="_self">ICONOS</a></li>
+            <!--el atributo target indica al navegador donde abrir la pagina o documento. el uso es diferencia los enlaces internos de los externos
+            el _self abre el enlace en la misma ventana-->
+            <li><a href="https://imaster.academy/course/view.php?id=830&section=7" target="_blank">CSS</a></li>
+            <!--abre el enlace en una nueva ventana _blank-->
+            <li><a href="https://imaster.academy/course/view.php?id=830&section=7" target="_parent">FORMATO</a></li>
+            <!--abre el documento en el marco principal _parent-->
+            <li>
+
+                    <!--abre el documento en todo el cuerpo de la ventana top-->
+                <a href="https://imaster.academy/course/view.php?id=830&section=7" target="top">
+                    <img href= "D:\Bibliotecas\Pictures\cumpleaños micha 2014" src="DSC03545" alt="Algo para explicar">
+                </a>
+            </li>
+        </ul>
+        <h2>Lista Ordenada</h2>
+        <!--Empieza con la etiqueta ol, y cada elemento empieza con li, aparecen los elemento enumerados, decimales, letras-->
+        <ol style="list-style-type: lower-alpha;">
+            <li>cafe</li>
+            <li>te</li>
+            <li>leche</li>
+        </ol>
+
+        <h2>Listas descriptivas</h2>
+        <dt>Coffe</dt>
+            <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+        <dd>white cold drink</dd>
+        
+    </body>
 </html>

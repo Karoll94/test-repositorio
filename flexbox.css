@@ -1,0 +1,101 @@
+#cuadro {
+    background-color: rgb(250, 86, 86);
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+
+}
+
+.cuerpo {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    flex-direction: column; /*define en que direccion el contenedor quiere apilar los elementos flexibles*/
+}
+
+.cuerpo1 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    flex-direction: row;
+}
+
+.cuerpo2 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    flex-direction: row-reverse ;
+}
+
+.cuerpo3 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    flex-direction: column-reverse ;
+}
+
+.cuerpo4 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    flex-wrap: wrap; /*Especifica si los elementos flexibles deben ajustarse o no al tamaño de la pagina web*/
+}
+
+.cuerpo5 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    justify-content: center; /*sirve para alinear los elementos flexibles*/
+}
+
+
+.cuerpo6 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    justify-content: flex-end; /*sirve para alinear los elementos flexibles*/
+}
+
+
+.cuerpo7 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    justify-content: space-around; /*sirve para alinear los elementos flexibles*/
+}
+
+
+.cuerpo8 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    justify-content: space-between; /*sirve para alinear los elementos flexibles*/
+}
+
+.cuerpo9 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    height: 200px;
+    align-items: center; /*paara alinear los elementos flexibles*/
+}
+
+.cuerpo10 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    height: 200px;
+    align-items: stretch; /*consume todo el espacio del height*/
+}
+
+.cuerpo11 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    height: 200px;
+    align-items: flex-start; 
+}
+
+.cuerpo12 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    height: 200px;
+    align-items: flex-end;  
+}
+
+.cuerpo13 {
+    background-color: rgb(190, 213, 233);
+    display: flex;
+    height: 200px;
+    align-items: baseline;
+}
