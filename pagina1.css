@@ -1,0 +1,80 @@
+*{
+    margin: 5px;
+    padding: none;
+    border: 1px;
+    box-sizing: border-box;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+}
+
+    .header {
+        background-color:#1638cf;
+        flex-flow: column;
+    }
+        .menu{
+            background-color:rgb(9, 136, 248);
+            display: flex;
+            flex-flow: row;
+            height: 60px;
+        }
+            .logo{
+                background-color: greenyellow;
+                flex: 1  1 auto;
+            }
+            .busqueda{
+                background-color:orangered;
+                flex: 5  1 auto;
+            }
+                .search{
+                    background-color: rgb(95, 95, 12);
+                    height: 25px;
+                }
+                .navegacion{
+                    background-color:rgb(145, 68, 39);
+                    height: 8px;
+                        }
+    .seccion1{
+        background-color: rgb(243, 138, 138);
+        display: flex;
+        height: 150px;
+    }
+        .herramienta{
+            background-color: blueviolet;
+            flex: 1 1 auto;
+        }
+        .imagenPrincipal{
+            background-color: tomato;
+            flex: 1 1 auto;
+        }
+    .seccion2{
+        background-color: rgb(96, 204, 129);
+        display: flex;
+        height: 200px;
+    }
+        .contenido{
+            background-color: antiquewhite;
+            display: flex;
+            flex-flow: row wrap;
+            flex: 3 1 auto;
+        }
+            .caracteristicas{
+                background-color: pink;
+                height: 20px;
+                flex: 1 1 100%;
+            }
+            .productos{
+                background-color: aquamarine;
+                height: 60px;
+                flex: 1 1 40%;
+            }
+        .publicidad{
+            background-color: rgb(238, 11, 11);
+            flex: 1 1 auto;
+        }
+    .footer{
+        background-color: blueviolet;
+    }
