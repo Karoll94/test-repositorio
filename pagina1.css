@@ -29,14 +29,14 @@
                 background-color:orangered;
                 flex: 5  1 auto;
             }
-                .search{
-                    background-color: rgb(95, 95, 12);
-                    height: 25px;
-                }
-                .navegacion{
-                    background-color:rgb(145, 68, 39);
-                    height: 8px;
-                        }
+            .search{
+                background-color: rgb(95, 95, 12);
+                height: 25px;
+            }
+            .navegacion{
+                background-color:rgb(145, 68, 39);
+                height: 8px;
+                    }
     .seccion1{
         background-color: rgb(243, 138, 138);
         display: flex;
