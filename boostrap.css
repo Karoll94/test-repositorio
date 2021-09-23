@@ -1,0 +1,45 @@
+.componente{
+    height: 8rem;
+    background-color: black;
+    border-radius: 0.25rem;
+}
+
+@media (min-width:576px){
+    .componente{
+        height: 8rem;
+        background-color: red;
+        border-radius: 0.25rem;
+    }
+}
+
+@media (min-width:768){
+    .componente{
+        height: 8rem;
+        background-color:yellow;
+        border-radius: 0.25rem;
+    }
+}
+
+@media (min-width:992){
+    .componente{
+        height: 8rem;
+        background-color: blue;
+        border-radius: 0.25rem;
+    }
+}
+
+@media (min-width:1200){
+    .componente{
+        height: 8rem;
+        background-color: green;
+        border-radius: 0.25rem;
+    }
+}
+
+@media (min-width:1400){
+    .componente{
+        height: 8rem;
+        background-color: grey;
+        border-radius: 0.25rem;
+    }
+}
