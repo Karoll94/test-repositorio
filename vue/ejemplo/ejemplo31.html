@@ -9,12 +9,44 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{titulo}}</h1>
+        <!-- <h1>{{equipos[2].titulos}}</h1> -->
+        <h1 >{{titulo}}</h1>
         <ul>
             <li v-for = "equipo of equipos">
                 {{equipo.nombre}} - {{equipo.titulos}}
+                <!--Directivas de vue como for , if y else-->
+                <p v-if = "equipo.titulos == 0" style= "display: inline; margin-left:40px;">Este pais no tiene copas mundiales</p>
+                <p v-else style= "display: inline; margin-left:40px;">Este pais si tiene copas mundiales</p>
             </li>
         </ul>
+        <!--Evento con tecla enter, puede ser cualquiera-->
+        <input type="text" v-model = "nuevoEquipo" v-on:keyup.enter = "agregarEquipo">
+        <!--Evento con boton on click-->
+        <button v-on:click = "agregarEquipo">Agregar Equipo</button>
+        <hr>
+        <!--Evento con tecla enter, puede ser cualquiera con contracciòn @-->
+        <input type="text" v-model = "nuevoEquipo" @keyup.enter = "agregarEquipo">
+        <!--Evento con boton on click con contracciòn @-->
+        <button @click = "agregarEquipo">Agregar Equipo</button>
+        <hr>
+
+        <!--Para agregar titulos-->
+        <ul>
+            <li v-for = "equipo of equipos">
+                <button @click = "equipo.titulos++">+</button>
+                {{equipo.nombre}}  {{equipo.titulos}}
+                <!--Directivas de vue como for , if y else-->
+                <input type="number" v-model.number ="equipo.titulos" style="width: 30px; position:relative;">
+            </li>
+        </ul>
+        <h4>Total de copas ganadas : {{sumarCopas}}</h4>
+        
+        <saludo></saludo>
+        <!-- <saludo1></saludo1>
+        <saludo2></saludo2>
+        <contador></contador>
+        <padre></padre> -->
+
     </div>
 
     
